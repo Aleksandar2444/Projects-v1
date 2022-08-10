@@ -53,10 +53,7 @@
       case "modulus":
         resultNum = oldNum % theNum;
         break;
-      // Kako da napravam ovde da ja brise poslednata brojka primer pisuvam 650 i da izbirse da ostanat 65
-      // case "delete":
-      //     viewer.innerText = viewer.innerText.slice(0, -1);
-      //     break;
+      
       default:
         resultNum = theNum;
     }
