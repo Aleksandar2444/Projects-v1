@@ -1,0 +1,91 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #243b47;
+}
+h4 {
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+svg {
+  width: 140px;
+  height: 140px;
+  margin: 1em;
+}
+.bg {
+  stroke-width: 10px;
+  stroke: #1a2c34;
+  fill: none;
+}
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 41% 41%;
+}
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  stroke: #51c5cf;
+  animation: progress-1 1.5s ease-out;
+}
+.meter-2 {
+  stroke: #00ff00;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-2 1s ease-out;
+}
+.meter-3 {
+  stroke: #ff33ff;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 250;
+  animation: progress-3 0.75s ease-out;
+}
+.text1 {
+  stroke: #51c5cf;
+  stroke-width: 1px;
+}
+.text2 {
+  stroke: #00ff00;
+  stroke-width: 1px;
+}
+.text3 {
+  stroke: #ff33ff;
+  stroke-width: 1px;
+}
+@keyframes progress-1 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 250;
+  }
+}

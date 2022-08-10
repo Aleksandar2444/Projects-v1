@@ -1,0 +1,68 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: floralwhite;
+}
+.cube {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  margin-top: 100px;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-200px) rotateZ(180deg) rotateX(45deg);
+  animation: spin 5s infinite linear;
+}
+.number {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: block;
+  line-height: 300px;
+  background: skyblue;
+  backface-visibility: hidden;
+  font-size: 130px;
+  font-weight: 700;
+  color: white;
+}
+.box .one {
+  transform: rotateY(0deg) translateZ(150px);
+}
+.box .two {
+  transform: rotateX(180deg) translateZ(150px);
+}
+.box .three {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.box .four {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.box .five {
+  transform: rotateX(90deg) translateZ(150px);
+}
+.box .six {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+@keyframes spin {
+  0% {
+    transform: translateZ(-100px) rotateY(360deg) rotateZ(0deg) rotateX(45deg);
+  }
+  50% {
+    transform: translateZ(-100px) rotateY(180deg) rotateZ(180deg) rotateX(45deg);
+  }
+  100% {
+    transform: translateZ(-100px) rotateY(0deg) rotateZ(360deg) rotateX(45deg);
+  }
+}

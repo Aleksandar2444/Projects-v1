@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <div id="calculator" class="calculator">
+      <div id="viewer" class="viewer"><span>0</span></div>
+      <button id="clear" class="clear">AC</button>
+      <button data-ops="delete" id="lightGray" class="ops">&larr;</button>
+      <button data-ops="modulus" id="lightGray" class="ops">%</button>
+      <button data-ops="divided by" id="orange" class="ops">/</button>
+
+      <button class="num" id="darkGray" data-num="7">7</button>
+      <button class="num" id="darkGray" data-num="8">8</button>
+      <button class="num" id="darkGray" data-num="9">9</button>
+      <button data-ops="times" id="orange" class="ops">*</button>
+
+      <button class="num" id="darkGray" data-num="4">4</button>
+      <button class="num" id="darkGray" data-num="5">5</button>
+      <button class="num" id="darkGray" data-num="6">6</button>
+      <button data-ops="minus" id="orange" class="ops">-</button>
+
+      <button class="num" id="darkGray" data-num="1">1</button>
+      <button class="num" id="darkGray" data-num="2">2</button>
+      <button class="num" id="darkGray" data-num="3">3</button>
+      <button data-ops="plus" id="orange" class="ops">+</button>
+
+      <button class="num numZero" id="darkGray" data-num="0">0</button>
+      <button class="num" id="darkGray" data-num=".">.</button>
+      <button id="equals" class="equals" data-result="">=</button>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>

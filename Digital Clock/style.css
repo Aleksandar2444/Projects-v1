@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  content: "";
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background: linear-gradient(45deg, black, transparent);
+}
+h4 {
+  color: black;
+  font-weight: 400;
+  padding: 1%;
+}
+.clock {
+  height: 60px;
+  width: 200px;
+  border: 3px solid black;
+  border-radius: 2px;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(255 255 255 / 56%) 0px 0px 20px 5px;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  border-radius: 2px;
+  padding: 5%;
+  letter-spacing: 2px;
+  background: linear-gradient(#595959 0 50%, #262626 0 100%);
+}
