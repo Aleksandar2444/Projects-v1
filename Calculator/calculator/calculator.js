@@ -53,7 +53,6 @@
       case "modulus":
         resultNum = oldNum % theNum;
         break;
-      
       default:
         resultNum = theNum;
     }
